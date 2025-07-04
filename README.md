@@ -21,3 +21,6 @@ Ports:
 
 Steam AppID: 3792580
 
+
+-Had to edit the Dockerfile, was giving me errors.  Should be okay now.
+
