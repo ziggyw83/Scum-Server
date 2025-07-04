@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  scum:
+    build: .
+    container_name: scumserver
+    volumes:
+      - ./wineprefix:/opt/wine64
+      - ./scumdata:/opt/scumserver
+    ports:
+      - "27015:27015/udp"
+      - "27016:27016/udp"
+      - "27020:27020/tcp"
+    restart: unless-stopped
